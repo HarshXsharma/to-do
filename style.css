@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(1200deg, #28b487, #7dd56f);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    max-height: 10vh;
+}
+
+header {
+    font-size: 2rem;
+}
+
+header {
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px #080808;
+}
+
+.filter-todo {
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #28b487;
+    font-size: 1rem;
+    width: 15vw;
+}
+
+form {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    border: none;
+    background: white;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+form button {
+    border: 1px solid rgb(20, 129, 61);
+}
+
+form button {
+    margin-left: 10px;
+    background: #3aad28;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #389029;
+    color: white;
+    border: 1px solid rgb(75, 148, 90);
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: all 0.4s ease-out;
+    border-radius: 10px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.check-btn, .trash-btn {
+    border: 1px solid white;
+    font-size: 1rem;
+    padding: 1rem;
+    color: rgb(44, 51, 51);
+    background-color: #3aad28;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.trash-btn:hover {
+    background: rgb(44, 90, 65);
+    color: rgb(255, 255, 255);
+}
+.check-btn:hover {
+    background: rgb(44, 90, 65);
+    color: white;
+}
+
+.todo-item {
+    padding-left: 0.5rem;
+}
+
+.fa-square-check, .fa-trash {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    opacity: 0;
+    transform: translateY(8rem) rotateZ(20deg);
+}
